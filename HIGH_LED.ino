@@ -3,13 +3,11 @@ const int Led = 11;
 int ValorPot = 0;
 int pwm = 0;
 
-void setup()
-{
+void setup(){
   pinMode(Led, OUTPUT);
 }
 
-void loop()
-{
+void loop(){
   ValorPot + analogRead(Potenciometro);
   pwm = map(ValorPot, 0, 1023, 0, 255);
   analogWrite(Led, pwm);
